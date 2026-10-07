@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Submit My Manuscript | Editorial Connect</title>
+
+    <meta name="description" content="Submit your manuscript to Editorial Connect and tell us about your publishing project.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="manuscrito-header">
+
+<div class="manuscrito-logo">
+    <a href="english.html">
+        <img src="images/logo.png" alt="Connect Book Services">
+    </a>
+</div>
+
+</header>
+
+<section class="manuscrito">
+
+<div class="container">
+
+    <h1>Submit My Manuscript</h1>
+
+    <p class="manuscrito-intro">
+        Do you have a story you want to bring to the world?
+    </p>
+
+    <p class="manuscrito-descripcion">
+        We’d love to hear about your book. Please complete the form below and submit your manuscript so we can review your work and discuss how we can support you throughout the publishing process.
+    </p>
+
+
+    <form id="formulario-manuscrito"
+          action="https://forminit.com/f/lw0ghzoz9tj"
+          method="POST"
+          enctype="multipart/form-data">
+
+
+        <div class="campo">
+
+            <label for="nombre">
+                Author's Name *
+            </label>
+
+            <input
+                type="text"
+                id="nombre"
+                name="fi-sender-fullName"
+                required>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="email">
+                Email *
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="fi-sender-email"
+                required>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="titulo">
+                Manuscript Title *
+            </label>
+
+            <input
+                type="text"
+                id="titulo"
+                name="fi-text-titulo-manuscrito"
+                required>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="genero">
+                Genre *
+            </label>
+
+            <select
+                id="genero"
+                name="fi-select-genero"
+                required>
+
+                <option value="" disabled selected>
+                    Select a genre
+                </option>
+
+                <option value="Thriller">Thriller</option>
+                <option value="Suspense">Suspense</option>
+                <option value="Romance">Romance</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Science Fiction">Science Fiction</option>
+                <option value="Horror">Horror</option>
+                <option value="Contemporary Fiction">
+                    Contemporary Fiction
+                </option>
+                <option value="Young Adult">Young Adult</option>
+                <option value="Children's">Children's</option>
+                <option value="Nonfiction">Nonfiction</option>
+                <option value="Other">Other</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="palabras">
+                Approximate Word Count *
+            </label>
+
+            <input
+                type="number"
+                id="palabras"
+                name="fi-number-cantidad-palabras"
+                min="1"
+                required>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label>
+                Is the manuscript complete? *
+            </label>
+
+            <div class="opciones-radio">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="fi-radio-manuscrito-terminado"
+                        value="Yes"
+                        required>
+                    Yes
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="fi-radio-manuscrito-terminado"
+                        value="No">
+                    No
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="sinopsis">
+                Brief Synopsis *
+            </label>
+
+            <textarea
+                id="sinopsis"
+                name="fi-textarea-sinopsis"
+                rows="7"
+                placeholder="Briefly tell us what your story is about."
+                required></textarea>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="objetivo">
+                What would you like to do with your manuscript? *
+            </label>
+
+            <select
+                id="objetivo"
+                name="fi-select-objetivo"
+                required>
+
+                <option value="" disabled selected>
+                    Select an option
+                </option>
+
+                <option value="I want to publish it">
+                    I want to publish it
+                </option>
+
+                <option value="I want to edit it before publishing">
+                    I want to edit it before publishing
+                </option>
+
+                <option value="I would like to receive an evaluation">
+                    I would like to receive an evaluation
+                </option>
+
+                <option value="I would like to learn about the options available for my project">
+                    I’d like to learn more about the options available for my project
+                </option>
+
+                <option value="Other">
+                    Other
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="manuscrito">
+                Attach Manuscript *
+            </label>
+
+            <input
+                type="file"
+                id="manuscrito"
+                name="fi-file-manuscrito"
+                accept=".pdf,.doc,.docx"
+                required>
+
+            <p class="archivo-info">
+                Accepted formats: PDF, DOC, or DOCX. Maximum file size: 25 MB.
+            </p>
+
+        </div>
+
+
+        <button type="submit">
+            Submit Manuscript
+        </button>
+
+    </form>
+
+
+    <div id="confirmacion-manuscrito" class="confirmacion-manuscrito">
+
+        <div class="confirmacion-linea"></div>
+
+        <div class="confirmacion-icono">✦</div>
+
+        <h2>Submission Received</h2>
+
+        <p class="confirmacion-destacado">
+            Thank you for trusting Connect Book Services with your publishing project.
+        </p>
+
+        <p>
+            We have successfully received your manuscript. Our team will review
+            the information and contact you by email.
+        </p>
+
+        <a href="english.html" class="confirmacion-boton">
+            Back to Connect Book Services
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+<script>
+
+const formulario = document.getElementById("formulario-manuscrito");
+
+formulario.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    const boton = formulario.querySelector("button");
+
+    boton.disabled = true;
+    boton.textContent = "Submitting...";
+
+    const datos = new FormData(formulario);
+
+    try {
+
+        const respuesta = await fetch(
+            "https://forminit.com/f/lw0ghzoz9tj",
+            {
+                method: "POST",
+                body: datos
+            }
+        );
+
+        if (respuesta.ok) {
+
+            formulario.reset();
+
+            formulario.style.display = "none";
+
+            document.getElementById("confirmacion-manuscrito").style.display = "block";
+
+        } else {
+
+            const texto = await respuesta.text();
+
+            console.error("Forminit error:", respuesta.status, texto);
+
+            boton.disabled = false;
+            boton.textContent = "Submit Manuscript";
+
+            alert("We couldn't submit your manuscript. Please try again.");
+
+        }
+
+    } catch (error) {
+
+        console.error("Connection error:", error);
+
+        boton.disabled = false;
+        boton.textContent = "Submit Manuscript";
+
+        alert("An error occurred while submitting your manuscript. Please try again.");
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>

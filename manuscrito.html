@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Enviar mi manuscrito | Editorial Connect</title>
+
+<meta name="description" content="Enviá tu manuscrito a Editorial Connect y contanos sobre tu proyecto editorial.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<header class="manuscrito-header">
+
+<div class="manuscrito-logo">
+    <a href="index.html">
+        <img src="images/logo.png" alt="Connect Book Services">
+    </a>
+</div>
+
+</header>
+
+<section class="manuscrito">
+
+
+<div class="container">
+
+    <h1>Enviar mi manuscrito</h1>
+
+    <p class="manuscrito-intro">
+        ¿Tenés una historia que querés llevar al mundo?
+    </p>
+
+    <p class="manuscrito-descripcion">
+        Nos gustaría conocer más sobre tu proyecto. Completá el siguiente formulario
+        y enviános tu manuscrito para que podamos conocer mejor tu obra y
+        ver cómo podemos acompañarte en el proceso editorial.
+    </p>
+
+
+    <form id="formulario-manuscrito"
+          action="https://forminit.com/f/lw0ghzoz9tj"
+          method="POST"
+          enctype="multipart/form-data">
+
+
+        <div class="campo">
+
+            <label for="nombre">
+                Nombre del autor *
+            </label>
+
+            <input
+                type="text"
+                id="nombre"
+                name="fi-sender-fullName"
+                required>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="email">
+                Email *
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="fi-sender-email"
+                required>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="titulo">
+                Título del manuscrito *
+            </label>
+
+            <input
+                type="text"
+                id="titulo"
+                name="fi-text-titulo-manuscrito"
+                required>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="genero">
+                Género *
+            </label>
+
+            <select
+                id="genero"
+                name="fi-select-genero"
+                required>
+
+                <option value="" disabled selected>
+                    Seleccioná un género
+                </option>
+
+                <option value="Thriller">Thriller</option>
+                <option value="Suspenso">Suspenso</option>
+                <option value="Romance">Romance</option>
+                <option value="Misterio">Misterio</option>
+                <option value="Fantasía">Fantasía</option>
+                <option value="Ciencia ficción">Ciencia ficción</option>
+                <option value="Terror">Terror</option>
+                <option value="Literatura contemporánea">
+                    Literatura contemporánea
+                </option>
+                <option value="Juvenil">Juvenil</option>
+                <option value="Infantil">Infantil</option>
+                <option value="No ficción">No ficción</option>
+                <option value="Otro">Otro</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="palabras">
+                Cantidad aproximada de palabras *
+            </label>
+
+            <input
+                type="number"
+                id="palabras"
+                name="fi-number-cantidad-palabras"
+                min="1"
+                required>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label>
+                ¿El manuscrito está terminado? *
+            </label>
+
+            <div class="opciones-radio">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="fi-radio-manuscrito-terminado"
+                        value="Sí"
+                        required>
+                    Sí
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="fi-radio-manuscrito-terminado"
+                        value="No">
+                    No
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="sinopsis">
+                Sinopsis breve *
+            </label>
+
+            <textarea
+                id="sinopsis"
+                name="fi-textarea-sinopsis"
+                rows="7"
+                placeholder="Contanos brevemente de qué trata tu historia."
+                required></textarea>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="objetivo">
+                ¿Qué te gustaría hacer con tu manuscrito? *
+            </label>
+
+            <select
+                id="objetivo"
+                name="fi-select-objetivo"
+                required>
+
+                <option value="" disabled selected>
+                    Seleccioná una opción
+                </option>
+
+                <option value="Quiero publicarlo">
+                    Quiero publicarlo
+                </option>
+
+                <option value="Quiero editarlo antes de publicarlo">
+                    Quiero editarlo antes de publicarlo
+                </option>
+
+                <option value="Quiero recibir una evaluación">
+                    Quiero recibir una evaluación
+                </option>
+
+                <option value="Quiero conocer las opciones disponibles para mi proyecto">
+                    Quiero conocer más sobre las opciones disponibles para mi proyecto
+                </option>
+
+                <option value="Otro">
+                    Otro
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="campo">
+
+            <label for="manuscrito">
+                Adjuntar manuscrito *
+            </label>
+
+            <input
+                type="file"
+                id="manuscrito"
+                name="fi-file-manuscrito"
+                accept=".pdf,.doc,.docx"
+                required>
+
+            <p class="archivo-info">
+                Formatos aceptados: PDF, DOC o DOCX. Tamaño máximo: 25 MB.
+            </p>
+
+        </div>
+
+
+        <button type="submit">
+            Enviar manuscrito
+        </button>
+
+    </form>
+
+
+    <div id="confirmacion-manuscrito" class="confirmacion-manuscrito">
+
+        <div class="confirmacion-linea"></div>
+
+        <div class="confirmacion-icono">✦</div>
+
+        <h2>Manuscrito recibido</h2>
+
+        <p class="confirmacion-destacado">
+            Gracias por confiar tu proyecto editorial en Connect Book Services.
+        </p>
+
+        <p>
+            Hemos recibido tu manuscrito correctamente. Nuestro equipo revisará
+            la información y se pondrá en contacto con vos por email.
+        </p>
+
+        <a href="index.html" class="confirmacion-boton">
+            Volver a Connect Book Services
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+<script>
+
+const formulario = document.getElementById("formulario-manuscrito");
+
+formulario.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    const boton = formulario.querySelector("button");
+
+    boton.disabled = true;
+    boton.textContent = "Enviando...";
+
+    const datos = new FormData(formulario);
+
+    try {
+
+        const respuesta = await fetch(
+            "https://forminit.com/f/lw0ghzoz9tj",
+            {
+                method: "POST",
+                body: datos
+            }
+        );
+
+        if (respuesta.ok) {
+
+            formulario.reset();
+
+            formulario.style.display = "none";
+
+            document.getElementById("confirmacion-manuscrito").style.display = "block";
+
+        } else {
+
+            const texto = await respuesta.text();
+
+            console.error("Error de Forminit:", respuesta.status, texto);
+
+            boton.disabled = false;
+            boton.textContent = "Enviar manuscrito";
+
+            alert("No pudimos enviar el manuscrito. Por favor, intentá nuevamente.");
+
+        }
+
+    } catch (error) {
+
+        console.error("Error de conexión:", error);
+
+        boton.disabled = false;
+        boton.textContent = "Enviar manuscrito";
+
+        alert("Ocurrió un error al enviar el manuscrito. Por favor, intentá nuevamente.");
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
